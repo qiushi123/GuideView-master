@@ -103,6 +103,7 @@ public class MainActivity extends AppCompatActivity {
                     }
                 })
                 .build();
+
         guideView.show();
     }
 
