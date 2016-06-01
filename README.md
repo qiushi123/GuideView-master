@@ -1,9 +1,18 @@
 # GuideView
 新手引导视图，初次打开页面时显示。
+支持圆形，椭圆，矩形等多种图形
+提示部分支持图片和文字提示
+
+#先看效果图
+![image](https://github.com/qiushi123/GuideView-master/blob/master/images/11.jpg?raw=true)
+
+
+
+#使用步骤。
+###使用起来特别简单，只需要把GuideView这个类复制到你的项目中就可以了
 
 
 *使用图片
-
 
         ImageView iv = new ImageView(this);
         iv.setImageResource(R.drawable.img_new_task_guide);
@@ -11,7 +20,7 @@
             ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT);
         iv.setLayoutParams(params);
 
-![image](https://github.com/laxian/GuideView/blob/develop/app/snapshot1.jpeg)
+![image](https://github.com/qiushi123/GuideView-master/blob/master/images/a.png?raw=true)
 
 *使用文字
 
@@ -19,12 +28,12 @@
         iv.setText("欢迎使用");
         iv.setTextColor(getResources().getColor(R.color.white));
         
-![image](https://github.com/laxian/GuideView/blob/develop/app/snapshot2.jpeg)
+![image](https://github.com/qiushi123/GuideView-master/blob/master/images/b.png?raw=true)
 
 *显示GuideView
 
         GuideView.Builder
-                 .newInstance(this)      // 必须调用
+            .newInstance(this)      // 必须调用
             .setTargetView(view)    // 必须调用，设置需要Guide的View
             .setCustomTipsView(iv)  // 必须调用，设置GuideView，可以使任意View的实例，比如ImageView 或者TextView
             .setDirction(GuideView.Direction.LEFT_BOTTOM)   // 设置GuideView 相对于TargetView的位置，有八种，不设置则默认在屏幕左上角,其余的可以显示在右上，右下等等
