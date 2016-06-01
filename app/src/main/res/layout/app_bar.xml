@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="48dp"
+    android:background="@color/colorPrimaryDark"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    android:gravity="center_vertical"
+    >
+
+    <ImageButton
+        android:id="@+id/ib_logo"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:background="@color/transparent"
+        android:src="@mipmap/ic_launcher"/>
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:layout_toRightOf="@+id/ib_logo"
+        android:layout_toLeftOf="@+id/ib_menu"
+        android:textColor="@color/white"
+        android:text="GuideView Demo"/>
+
+    <ImageButton
+        android:id="@+id/ib_menu"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:background="@color/transparent"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/ic_menu_moreoverflow"/>
+
+</RelativeLayout>
