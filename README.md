@@ -46,3 +46,7 @@
             .showOnce()             // 设置首次显示，设置后，显示一次后，不再显示
             .build()                // 必须调用，Buider模式，返回GuideView实例
             .show();                // 必须调用，显示GuideView
+
+
+##博客详解地址：
+http://blog.csdn.net/qiushi_1990/article/details/51558319
